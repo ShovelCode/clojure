@@ -1,0 +1,6 @@
+str
+defn
+def
+fun
+[colls]
+seq
