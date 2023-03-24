@@ -17,3 +17,11 @@ Calva
 Visual Studio Code:
 command shift p
 command k z   ;zen mode
+
+
+the usual git flow:
+git clone
+git checkout
+git add
+git commit
+git push
