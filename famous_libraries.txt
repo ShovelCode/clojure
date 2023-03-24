@@ -1,0 +1,9 @@
+unitful
+[unitful "0.15.0"]
+(ns my.namespace
+  (:require [unitful.quantity :as q]
+            [unitful.unit :as u]))
+
+(def temperature (q/->Quantity 25 :degree-celsius))
+(q/convert temperature :degree-fahrenheit)
+(u/get-unit :pound)
