@@ -8,3 +8,8 @@ map
 range
 filter
 remove
+ns
+
+clojure.spec
+
+
