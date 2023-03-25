@@ -9,7 +9,11 @@ range
 filter
 remove
 ns
+type
+nth
+
 
 clojure.spec
+core.sync
 
 
