@@ -1,0 +1,57 @@
+A var holds a mutable reference to another object.
+
+A namespace maps symbols to vars.
+
+The clojure.core namespace contains almost 500 functions.
+
+Symbols resolve into the values held in vars.
+
+fn returns a new function object
+
+(fn [x y & z] ;takes two or more arguments
+    (do-stuff x y z)
+    (bar z x))
+
+(fn [& a] ; takes zero or more arguments
+    (do-stuff a))
+
+(if (condition) (consequence) (alternate)) ;if condition is true then do the consequence, otherwise
+;do the alternate
+(if (alice) (bob)) ; if alice is true then do bob
+
+The do form runs a body of expressions in order and returns the value of the 
+last expression in the body
+
+The let special form binds values of expressions to symbols for the duration of its body
+it returns the value of the value returned by the last expression in the body
+The bindings are written in a vector literal.  EX:
+(let [x 1 y 2])
+
+The recur special form jumps execution back to last recursion point with new binding values
+it may only be used in tail position
+
+The loop special form establishes a recursion point for recur.
+
+The dot special form accesses static methods and fields.
+
+The names of vectors can be used as functions that take a single integer
+ and then returns the vector's value at index referenced by the integer. EX:
+Clojure 1.10.3
+user=> (def books ["reals estate license guide" "rince" "Moby Dic"])
+#'user/books
+user=> (books 0)
+"reals estate license guide"
+user=> 
+
+a sequence is any collection that supports
+first and rest (it's an interface)
+
+Sequences enable performant and stateless iteration over collections.
+
+A cons is a sequence type which holds a value and a reference to another sequence.
+
+A lazy sequence generates its elements only as needed.
+
+
+
+

@@ -11,9 +11,32 @@ remove
 ns
 type
 nth
+(vector 1 2 3)
+inc
+dec
+throw
+try
+var
+count
+list?
+vector?
+map?
+contains?
+assoc
+dissoc
+merge
+get 
+pop
+peek
+
+
+*' can multiply really big integers
+
+
 
 
 clojure.spec
 core.sync
+clojure.core
 
 
