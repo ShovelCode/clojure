@@ -28,6 +28,10 @@ merge
 get 
 pop
 peek
+range
+repeat
+repeatedly
+cycle
 
 
 *' can multiply really big integers
